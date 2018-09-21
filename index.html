@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type='text/css'>
+/* Text & Images */
 .page-wrap {
     text-align: center;
 	margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
 }
 .inside {
 	display: flex;
@@ -18,52 +19,79 @@
 	height: 500px;
 }
 .main-header-image {
-	max-width: 800px;
+	max-width: 600px;
+}
+.top-header {
+	margin-top: -60px;
 }
 .paragraph {
 	text-align: justify;
 }
-
-.corner-ribbon{
-  width: 200px;
-  background: #e43;
-  position: absolute;
-  top: 25px;
-  left: -50px;
-  text-align: center;
-  line-height: 50px;
-  color: #f0f0f0;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+.links {
+	width: 100%;
+	height: 100px;
+	background-color: red;
+	margin-bottom: -1px;
 }
-.corner-ribbon.sticky {
-	position: fixed;
+.flex-container {
+	display: flex;
+	margin-top: 10px;
 }
-.corner-ribbon.shadow {
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+.link-icon {
+	flex: 1;
 }
-.corner-ribbon.top-left {
-	top: 25px;
-	left: -50px;
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
+.facebook-bg {
+	background-color: #3b5998;
 }
-.corner-ribbon.red {
-	background: #e43;
+.twitter-bg {
+	background-color: #00aced;
+}
+.instagram-bg {
+	background-color: #405de6;
+}
+.youtube-bg {
+	background-color: #ff0000;
+}
+.github-bg {
+	background-color: black;
+}
+.mail-bg {
+	background-color: #ff9d3b;
+}
+/* phone, map-pin, calendar, globe */
+.phone-bg {
+	background-color: #16a314;
+}
+.map-pin-bg {
+	background-color: #af0606;
+}
+.calendar-bg {
+	background-color: #ffcc00;
+}
+.globe-bg {
+	background-color: #cb202d;
+}
+.bottom-banner {
+	display: block;
+	width: 100%;
+	margin: auto;
+	max-width: 700px;
+}
+svg {
+	height: 100%;
 }
 </style>    
 
 </head>
     
 <html><body>
-		<div class="corner-ribbon top-left red">No JavaScript</div>
         <div class=page-wrap>
   <div class=inside>
 		<div class="main-header">
 			<h1>CHICAGO DSA NEW MEMBER GUIDE</h1>
 			<img class="main-header-image" src="dsa_protest.jpg">
 		</div>
-		<h2>Welcome to Chicago DSA!</h2>
+		<h2 class="top-header">Welcome to Chicago DSA!</h2>
 		
 		
         <p>
@@ -114,6 +142,140 @@
 <li><a href="https://chicagodsa.org/public-education-working-group/">Public Education Working Group</a></li>
 <li><a href="https://chicagodsa.org/rapid-response-working-group/">Rapid Response Working Group</a></li>
         </ul>
+		<div class="links flex-container">
+			<a class="link-icon facebook-bg" href="https://www.facebook.com/ChicagoDemSocialists/" target="_blank">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#facebook" />
+				</svg>
+			</a>
+			<a class="link-icon twitter-bg" href="https://twitter.com/ChicagoCityDSA" target="_blank">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#twitter" />
+				</svg>
+			</a>
+			<a class="link-icon instagram-bg" target="_blank" href="https://www.instagram.com/chicagodsa/">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#instagram" />
+				</svg>
+			</a>
+			<a class="link-icon youtube-bg" target="_blank" href="https://www.youtube.com/channel/UCXkf8Ael0kVM_jGekD0w5uA/featured">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#youtube" />
+				</svg>
+			</a>
+			<a class="link-icon github-bg" target="_blank" href="https://github.com/ChicagoDSA">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="white"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#github" />
+				</svg>
+			</a>
+			<a class="link-icon mail-bg" target="_blank" href="mailto:info@chicagodsa.org">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#mail" />
+				</svg>
+			</a>
+			<a class="link-icon phone-bg" target="_blank" href="tel:1-773-384-0327">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#phone" />
+				</svg>
+			</a>
+			<a class="link-icon map-pin-bg" target="_blank" href="https://www.openstreetmap.org/search?query=3411%20W.%20Diversey%20Ave%2C%20Chicago%20IL%2060647#map=19/41.93182/-87.71266">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#map-pin" />
+				</svg>
+			</a>
+			<a class="link-icon calendar-bg" target="_blank" href="https://chicagodsa.org/events/">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#calendar" />
+				</svg>
+			</a>
+			<a class="link-icon globe-bg" target="_blank" href="https://www.dsausa.org/">
+				<svg
+					width="24"
+					height="24"
+					fill="none"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<use xlink:href="feather-sprite.svg#globe" />
+				</svg>
+			</a>
+
+		</div>
+		<img class="bottom-banner" src="cdsa_bottom_banner.png">
             </div>
         </div>
     </body>
